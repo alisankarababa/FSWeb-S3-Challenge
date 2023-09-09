@@ -3,51 +3,84 @@
 <html lang="tr">
 
 <head>
-	<meta charset="utf-8">
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
 
 	<title>Sprint Challenge - Anasayfa</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/5b12ffad4b.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="css/index.css">
 </head>
 
-<body>
-	<div>
-		<!-- header -->
+<body >
+	<div class="app">
+		
+		<!-- header section -->
 		<header>
-			<div>
-				ERGİNEER BAR VE MANGAL
+			<div class="header--div">
+				<div class="header--div__item">
+					<a href="index.html">
+						<h1>ERGİNEER BAR VE MANGAL</h1>
+					</a>
+				</div>
+			
+				<nav class="header--div__item ">
+					<div class="menu">
+						<a href="menu.html" class="menu__item">Menü</a>
+						<a href="" class="menu__item">Rezervasyonlar</a>
+						<a href="" class="menu__item">Özel Teklifler</a>
+						<a href="" class="menu__item">İletişim</a>
+					</div>
+				</nav>
 
-				<!-- nav -->
-				Menü
-				Rezervasyonlar
-				Özel Teklifler
-				İletişim
+				<div class="header--div__item social--media--links" >
+					<a href="facebook" class="social--media--link__item">
+						<img src="./img/facebook.svg" alt="facebook-icon">
+					</a>
+					<a href="twitter" class="social--media--link__item">
+						<img src="./img/twitter.svg" alt="twitter-icon">
+					</a>
+					<a href="instagram" class="social--media--link__item">
+						<img src="./img/instagram.svg" alt="instagram-icon">
+					</a>
+				</div>
 			</div>
 		</header>
 
 		<!-- gallery section -->
 		<section class="gallery">
-			<div>
+			<div class="gallery__item heading">
 				<h2>YEMEKLERİMİZ</h2>
-
-				img/food-avocadotoast.jpg
-
-				img/food-burger.jpg
-
-				img/food-poutine.jpg
-
-				img/food-ribs.jpg
-
-				img/food-sandwich.jpg
-
-				img/food-sausage.jpg
-
-				img/food-steak.jpg
-
-				img/food-tacos.jpg
-
-				img/food-wings.jpg
+			</div>
+			<div class="gallery__item food">
+				<div class="food__item">
+					<img src="./img/food-avocadotoast.jpg" alt="" class="gallery__img">
+				</div>
+				<div class="food__item">
+					<img src="./img/food-burger.jpg" alt="" class="gallery__img">
+				</div>
+				<div class="food__item">
+					<img src="./img/food-poutine.jpg" alt="" class="gallery__img">
+				</div>
+				<div class="food__item">
+					<img src="./img/food-ribs.jpg" alt="" class="gallery__img">
+				</div>
+				<div class="food__item">
+					<img src="./img/food-sandwich.jpg" alt="" class="gallery__img">
+				</div>
+				<div class="food__item">
+					<img src="./img/food-sausage.jpg" alt="" class="gallery__img">
+				</div>
+				<div class="food__item">
+					<img src="./img/food-steak.jpg" alt="" class="gallery__img">
+				</div>
+				<div class="food__item">
+					<img src="./img/food-tacos.jpg" alt="" class="gallery__img">
+				</div>
+				<div class="food__item">
+					<img src="./img/food-wings.jpg" alt="" class="gallery__img">
+				</div>
 			</div>
 		</section>
 
@@ -56,34 +89,31 @@
 
 		<!-- about section -->
 		<section class="about">
-			<div class="about-container">
-				<h2>HAKKIMIZDA</h2>
-
-				<div id="cooks" class="pic">
+				<div class="about__item heading">
+					<h2>HAKKIMIZDA</h2>
 				</div>
 
-				<div class="text">
+				<div class="about__item text">
 					<h3>Güzel Yemekler, Güzel İnsanlar</h3>
-					<p>Quis duis aute, shank ut pork eiusmod in ball tip jerky non. Short ribs tail dolore, fatback in
+					<p>
+						"Quis duis aute, shank ut pork eiusmod in ball tip jerky non. Short ribs tail dolore, fatback in
 						tempor meatloaf pig sunt porchetta beef. Ad hamburger pig veniam, andouille exercitation cillum
 						eiusmod doner irure tail burgdoggen rump chislic officia. Pancetta frankfurter sed, est t-bone
 						porchetta capicola id tri-tip cillum cow leberkas do minim. Sausage ea velit boudin laboris
 						dolore
 						short loin corned beef commodo jowl beef dolor tempor. Dolor culpa enim in meatloaf, ham mollit
-						shankle duis chicken dolore andouille do tenderloin qui.</p>
+						shankle duis chicken dolore andouille do tenderloin qui."
+					</p>
 				</div>
-
-				<div id="bartender" class="pic">
-				</div>
-			</div>
 		</section>
-
+		
 		<!-- spacer -->
 		<div class="spacer"></div>
 
 		<!-- contact section -->
 		<section class="contact">
 			<div class="contact-container">
+				
 				<h2>BİZE ULAŞIN</h2>
 
 				<div class="info">
@@ -110,10 +140,8 @@
 					<div class="contacts">
 						<h3>İletişim</h3>
 
-						<div>
-							<a id="phone" href="tel:999-999-9999">999-999-9999</a>
-							<a id="email" href="mailto:restoran@boomer.com">restoran@ergineer.com</a>
-						</div>
+						<a id="phone" href="">999-999-9999</a><br>
+						<a id="phone" href="">restoran@ergineer.com</a>
 					</div>
 				</div>
 			</div>
@@ -125,15 +153,24 @@
 		<!-- footer -->
 		<footer>
 			<!-- email signup -->
-			Mail listemize katılın!
-			Üye Ol
-			<!-- nav -->
-			Menü
-			Rezervasyonlar
-			Özel Teklifler
-			İletişim
-			<!-- copyright -->
-			©2022 ERGİNEER Restoran Zinciri, Tüm hakları saklıdır.
+			<div class="footer__item mail">
+				<p>Mail listemize katılın!</p>
+				<input type="text" placeholder="E-posta Adresi">
+				<button>Üye Ol</button>
+			</div>
+			<div class="footer__item links--copyright">
+				<nav class="links">
+					<a href="menu.html" class="footer--nav__item">Menü</a>
+					<a href="" class="footer--nav__item">Rezervasyonlar</a>
+					<a href="" class="footer--nav__item">Özel Teklifler</a>
+					<a href="" class="footer--nav__item">İletişim</a>
+				</nav>
+				<div class="copyright">
+					<p>
+						©2022 ERGİNEER Restoran Zinciri, Tüm hakları saklıdır.
+					</p>
+				</div>
+			</div>
 		</footer>
 	</div>
 </body>
